@@ -57,13 +57,15 @@ async function main() {
     process.exit(1)
   }
 
-  const message = `  ${chalk.green(figures.tick)}  Your GraphQL API is ready to use. Here are your (interactive) endpoints:
+  const message = `  ${chalk.green(figures.tick)}  Your GraphQL API is ready to use. Here are your endpoints:
  
     ${chalk.blue(figures.pointer)} Simple API: https://api.graph.cool/simple/v1/${body.project.alias}
     ${chalk.blue(figures.pointer)} Relay API:  https://api.graph.cool/relay/v1/${body.project.alias}
 
 
-  Read here to get started with your API: https://www.graph.cool/graphql-up`
+  ${chalk.bold('Open your GraphQL endpoint in a browser to use the interactive API Playground.')}
+
+  API Documentation: https://www.graph.cool/docs/graphql-up/`
 
   console.log(message)
 }
