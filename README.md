@@ -2,9 +2,8 @@
 
 `graphql-up` is the fastest way to get a free & ready to use GraphQL API. It works out of the box with Apollo & Relay and supports GraphQL subscriptions.
 
-You only need to provide the schema, graphql-up will create a GraphQL API for you. The actual magic happens on the servers sponsored by Graphcool.
+![](http://imgur.com/sdwFBFs.gif)
 
-![](http://imgur.com/TOTGex5.png)
 
 ## Quickstart
 
@@ -35,6 +34,12 @@ graphql-up instagram.schema
     --help, -h      Show help message
 
 ```
+
+## How it works
+
+You only need to provide the schema, graphql-up will create a GraphQL API for you. The actual magic happens on the servers sponsored by Graphcool.
+
+![](http://imgur.com/TOTGex5.png)
 
 ## Examples
 
