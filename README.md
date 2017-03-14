@@ -2,7 +2,7 @@
 
 `graphql-up` is the fastest way to get a free & ready to use GraphQL API. It works out of the box with Apollo & Relay and supports GraphQL subscriptions.
 
-![](http://imgur.com/mVSXQL7.gif)
+![](./resources/preview.gif)
 
 ## Quickstart
 
