@@ -2,16 +2,41 @@
 
 `graphql-up` is the fastest way to get a free & ready to use GraphQL API. It works out of the box with Apollo & Relay and supports GraphQL subscriptions.
 
-![](./resources/preview.gif)
+Here is a quick demo ([see this video tutorial for more details](https://www.youtube.com/watch?v=kWS7SGcp7cY)):
+
+<!-- ![](./resources/preview.gif) -->
+
+## Features
+
+* 🚀 Get a instant **GraphQL API for your schema**
+* ⚛️ Optimized endpoints for Apollo & Relay
+* 👨‍🏫 Easy to add to your own tutorials, docs & examples
+
 
 ## Quickstart
 
+```graphql
+type Tweet {
+  id: ID!
+  text: String!
+  author: User! @relation(name: "Tweets")
+}
+
+type User {
+  id: ID!
+  name: String!
+  tweets: [Tweet!]! @relation(name: "Tweets")
+}
+```
+
+Copy the schema above and save it as `twitter.schema`.
+
 ```sh
-# Install with npm
+# Install the CLI via npm (or yarn)
 npm install -g graphql-up
 
-# Create GraphQL API using a local schema file
-graphql-up instagram.schema
+# Create GraphQL API using your local schema file
+graphql-up twitter.schema
 ```
 
 ## Usage
@@ -34,49 +59,37 @@ graphql-up instagram.schema
 
 ```
 
+### Local schema file
+
+```sh
+graphql-up twitter.schema
+```
+
+### Hosted schema file
+
+
+```sh
+graphql-up https://raw.githubusercontent.com/graphcool/graphql-up/master/examples/twitter.schema
+```
+
 ## How it works
 
 You only need to provide the schema, graphql-up will create a GraphQL API for you. The actual magic happens on the servers sponsored by Graphcool.
 
 ![](http://imgur.com/TOTGex5.png)
 
+You'll receive two endpoints:
+
+
+
 ## Examples
 
-### Twitter
+* [Twitter](examples/twitter.schema) [![graphql-up](http://static.graph.cool/images/graphql-up.svg)](https://www.graph.cool/graphql-up/new?source=https://raw.githubusercontent.com/graphcool/graphql-up/master/examples/twitter.schema)
 
-```graphql
-type Tweet {
-  id: ID!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-  text: String!
-  author: User!
-}
 
-type User {
-  id: ID!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-  name: String!
-  tweets: [Tweet!]!
-}
-```
 
-### Instagram
+## Help & Community [![Slack Status](https://slack.graph.cool/badge.svg)](https://slack.graph.cool)
 
-```graphql
-type Post {
-  id: ID!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-  author: User!
-}
+Join our [Slack community](http://slack.graph.cool/) if you run into issues or have questions. We love talking to you!
 
-type User {
-  id: ID!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-  name: String!
-  posts: [Tweet!]!
-}
-```
+![](http://i.imgur.com/5RHR6Ku.png)
