@@ -74,7 +74,7 @@ graphql-up https://raw.githubusercontent.com/graphcool/graphql-up/master/example
 
 ## How it works
 
-You only need to provide the schema, graphql-up will create a GraphQL API for you. The actual magic happens on the servers sponsored by Graphcool.
+You only need to provide the schema, graphql-up will create a GraphQL API for you. The actual magic happens on the servers sponsored by [Graphcool](https://www.graph.cool).
 
 ![](http://imgur.com/TOTGex5.png)
 
