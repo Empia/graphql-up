@@ -25,7 +25,7 @@ type User {
 }
 ```
 
-Copy the schema above and save it as `twitter.schema`.
+Copy the schema above and save it as `twitter.schema`. ([Read more about the IDL syntax](https://www.graph.cool/docs/faq/graphql-schema-definition-idl-kr84dktnp0/).)
 
 ```sh
 # Install the CLI via npm (or yarn)
@@ -78,14 +78,25 @@ You only need to provide the schema, graphql-up will create a GraphQL API for yo
 
 ![](http://imgur.com/TOTGex5.png)
 
-You'll receive two endpoints:
+## Add ![graphql-up](http://static.graph.cool/images/graphql-up.svg) to your repositories/docs
+
+You can easily add a `graphql-up` badge to your own tutorials, docs & examples. Just add the following Markdown snippet and replace the `__SCHEMA_URL__ ` with a link to your schema file. ([See here for a snippet generator](https://www.graph.cool/graphql-up/).)
+
+```md
+[![graphql-up](http://static.graph.cool/images/graphql-up.svg)](https://www.graph.cool/graphql-up/new?source=__SCHEMA_URL__)
+```
 
 
+## Schema Examples
 
-## Examples
+* [Twitter](examples/twitter.schema)
+* [Instagram](examples/instagram.schema)
 
-* [Twitter](examples/twitter.schema) [![graphql-up](http://static.graph.cool/images/graphql-up.svg)](https://www.graph.cool/graphql-up/new?source=https://raw.githubusercontent.com/graphcool/graphql-up/master/examples/twitter.schema)
+Do you have another interesting example in mind? [Add it here](https://github.com/graphcool/graphql-up/issues/new). 📚
 
+## Known limitations
+
+* `enum` types are not supported yet
 
 
 ## Help & Community [![Slack Status](https://slack.graph.cool/badge.svg)](https://slack.graph.cool)
