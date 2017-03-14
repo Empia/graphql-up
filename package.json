@@ -1,7 +1,7 @@
 {
   "name": "graphql-up",
   "description": "Get a ready-to-use GraphQL endpoint based on your schema",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "bin": "dist/index.js",
   "files": [
     "README.md",
