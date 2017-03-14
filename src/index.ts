@@ -65,7 +65,8 @@ async function main() {
 
   ${chalk.bold('Open your GraphQL endpoint in a browser to use the interactive API Playground.')}
 
-  API Documentation: https://www.graph.cool/docs/graphql-up/`
+  API Documentation: https://www.graph.cool/docs/graphql-up/
+`
 
   console.log(message)
 }

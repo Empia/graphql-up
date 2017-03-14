@@ -2,8 +2,7 @@
 
 `graphql-up` is the fastest way to get a free & ready to use GraphQL API. It works out of the box with Apollo & Relay and supports GraphQL subscriptions.
 
-![](http://imgur.com/QCoeNfz.gif)
-
+![](http://i.imgur.com/jzdsHz6.gif)
 
 ## Quickstart
 
@@ -60,9 +59,24 @@ type User {
   updatedAt: DateTime!
   name: String!
   tweets: [Tweet!]!
-  following: [User!]!
-  followedBy: [User!]!
 }
 ```
 
 ### Instagram
+
+```graphql
+type Post {
+  id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  author: User!
+}
+
+type User {
+  id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  name: String!
+  posts: [Tweet!]!
+}
+```
