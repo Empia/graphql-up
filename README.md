@@ -2,10 +2,6 @@
 
 `graphql-up` is the fastest way to get a free & ready to use GraphQL API. It works out of the box with Apollo & Relay and supports GraphQL subscriptions.
 
-Here is a quick demo ([see this video tutorial for more details](https://www.youtube.com/watch?v=kWS7SGcp7cY)):
-
-<!-- ![](./resources/preview.gif) -->
-
 ## Features
 
 * 🚀 Get a instant **GraphQL API for your schema**
@@ -38,6 +34,10 @@ npm install -g graphql-up
 # Create GraphQL API using your local schema file
 graphql-up twitter.schema
 ```
+
+This is how it should look like ([see this video tutorial for more details](https://www.youtube.com/watch?v=kWS7SGcp7cY)):
+
+![](./resources/preview.gif)
 
 ## Usage
 
